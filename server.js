@@ -11,8 +11,12 @@ connectDB();
 
 app.use(
   cors({
-    origin: process.env.CLIENT_ORIGIN || "http://localhost:3000",
+    origin:
+      "https://task-management-frontend-ovuxnktky-padmanaban-vs-projects.vercel.app",
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    preflightContinue: true,
   })
 );
 
