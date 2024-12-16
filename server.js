@@ -12,11 +12,10 @@ connectDB();
 app.use(
   cors({
     origin:
-      "https://task-management-frontend-git-main-padmanaban-vs-projects.vercel.app/",
+      "https://task-management-frontend-git-main-padmanaban-vs-projects.vercel.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
-    preflightContinue: true,
   })
 );
 
